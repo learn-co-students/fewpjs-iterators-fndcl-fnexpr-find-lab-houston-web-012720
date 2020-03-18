@@ -6,7 +6,5 @@ function testFunc() {
 
 let superbowlWin = (record) => {
   const winningGame = record.find(obj => obj.result === 'W')
-  if (winningGame) {
-    return winningGame.year
-  }
+  if (winningGame) return winningGame.year
 }

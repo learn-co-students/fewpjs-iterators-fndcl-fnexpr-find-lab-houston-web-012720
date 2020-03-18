@@ -5,11 +5,11 @@ function testFunc() {
 }
 
 function superbowlWin(record){
-  record.find(record => record.result === "W")
-  if (record.result === "W"){
-    return record.year
-  }
+  let r = record.find(element => element.result === "W")
+  return !!r ? r.year : undefined
+  // if (record.result === "W"){
+  //   return record.year
+  // }
 }
 
-// this should work... im done with this remote crap 
 
